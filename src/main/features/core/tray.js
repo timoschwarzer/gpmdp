@@ -64,19 +64,17 @@ Settings.onChange('appIconInvert', (newValue) => {
 // Change the icon if the music is playing
 Emitter.on('playback:isPlaying', () => {
   currentIconPath = trayPlayingPath;
-  if (appIcon) appIcon.setImage(getAppIconFileName());
+  //if (appIcon) appIcon.setImage(getAppIconFileName());
 });
 
 // Change the icon is the music is paused
 Emitter.on('playback:isPaused', () => {
   currentIconPath = trayPausedPath;
-  if (appIcon) appIcon.setImage(getAppIconFileName());
 });
 
 // Change the icon is the music is stopped
 Emitter.on('playback:isStopped', () => {
   currentIconPath = trayNormalPath;
-  if (appIcon) appIcon.setImage(getAppIconFileName());
 });
 
 const setContextMenu = (track) => {
