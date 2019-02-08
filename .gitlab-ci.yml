@@ -15,4 +15,4 @@ build:
       - ./dist/installers/
   script:
     - yarn
-    - yarn package:deb:64
+    - yarn make:deb:64
