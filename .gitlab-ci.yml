@@ -1,0 +1,18 @@
+image: gpmdp/build-64
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  artifacts:
+    paths:
+      - ./dist/installers/
+  script:
+    - yarn
+    - yarn package:deb:64

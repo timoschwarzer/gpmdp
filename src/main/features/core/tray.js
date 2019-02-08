@@ -64,7 +64,6 @@ Settings.onChange('appIconInvert', (newValue) => {
 // Change the icon if the music is playing
 Emitter.on('playback:isPlaying', () => {
   currentIconPath = trayPlayingPath;
-  //if (appIcon) appIcon.setImage(getAppIconFileName());
 });
 
 // Change the icon is the music is paused
