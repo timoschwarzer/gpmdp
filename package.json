@@ -62,7 +62,7 @@
     "archiver": "^1.0.1",
     "auto-launch": "^4.0.0",
     "discord-rich-presence": "^0.0.7",
-    "electron": "2.0.17",
+    "electron": "3.1.6",
     "electron-chromecast": "^1.1.0",
     "gmusic-mini-player.js": "^2.0.10",
     "gmusic-theme.js": "^2.1.16",
@@ -76,6 +76,7 @@
     "material-ui": "^0.15.4",
     "mdns": "^2.3.3",
     "mkdirp": "^0.5.1",
+    "nan": "^2.13.1",
     "node-fetch": "^1.5.2",
     "raven": "^0.12.1",
     "react": "^15.3.1",
@@ -166,7 +167,7 @@
     "electron-media-service": "^0.2.2",
     "ll-keyboard-hook-win": "^3.0.0",
     "mouse-forward-back": "^1.0.1",
-    "mpris-service": "GPMDP/mpris-service"
+    "mpris-service": "^2.0.0"
   },
   "babel": {
     "presets": [
@@ -189,5 +190,8 @@
         "sourceMaps": "inline"
       }
     }
+  },
+  "resolutions": {
+    "nan": "^2.13.1"
   }
 }
